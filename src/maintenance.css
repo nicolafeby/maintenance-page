@@ -1,0 +1,73 @@
+/* Full screen background */
+.container {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #2f5597, #3b6cb7);
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.thanks {
+  margin-top: 12px;
+}
+
+/* 🔥 Custom Loader (Bar Animation) */
+.loader {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 6px;
+  height: 30px;
+  background: white;
+  border-radius: 4px;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: scaleY(0.4);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
